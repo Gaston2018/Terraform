@@ -13,7 +13,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: AWS EC2 t2.micro
+        working-directory: Terraform/AWS EC2 t2.micro
 
     steps:
       - name: Checkout repo
@@ -33,7 +33,6 @@ jobs:
       - name: Terraform Plan
         run: terraform plan
 
-      # Descomenta esto si quieres aplicar solo en main
       # - name: Terraform Apply
       #   if: github.ref == 'refs/heads/main'
       #   run: terraform apply -auto-approve
