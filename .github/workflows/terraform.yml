@@ -13,7 +13,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: Terraform/AWS EC2 t2.micro
+        working-directory: AWS EC2 t2.micro
 
     steps:
       - name: Checkout repo
